@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "885E6F285ADAE868CBD3756F141E6B032EFA7D1E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "885E6F285ADAE868CBD3756F141E6B032EFA7D1E" : 9223372036854775807,
+    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6553BD4-FA01-47AF-AD2D-6503A083F0A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "885E6F285ADAE868CBD3756F141E6B032EFA7D1E" : "memeFinal\/",
+    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "memeFinal",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "memeFinal.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MarkDong121\/memeNoKeyboards.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "885E6F285ADAE868CBD3756F141E6B032EFA7D1E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MarkDong121\/memeNoPhotos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB7B987E37DBF04C309D47ACF2D769834E58F60A"
+    }
+  ]
+}
