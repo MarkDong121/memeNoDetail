@@ -1,18 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "885E6F285ADAE868CBD3756F141E6B032EFA7D1E",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5B279F6E50AFE18BE7FDF2B5B70B403A60503677",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "98D993C3155DD183E524EB0535313357016D2C36" : 9223372036854775807,
-    "885E6F285ADAE868CBD3756F141E6B032EFA7D1E" : 9223372036854775807,
-    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : 9223372036854775807
+    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : 9223372036854775807,
+    "5B279F6E50AFE18BE7FDF2B5B70B403A60503677" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B025479F-1CA7-4284-B628-2FC2F8A2C3B7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "98D993C3155DD183E524EB0535313357016D2C36" : "memetest\/memetest\/",
-    "885E6F285ADAE868CBD3756F141E6B032EFA7D1E" : "memetest\/",
-    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : ""
+    "DB7B987E37DBF04C309D47ACF2D769834E58F60A" : "",
+    "5B279F6E50AFE18BE7FDF2B5B70B403A60503677" : "memetest\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "memetest",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,7 +21,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https\/\/github.com\/MarkDong121\/memeNoPhoto.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "885E6F285ADAE868CBD3756F141E6B032EFA7D1E"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5B279F6E50AFE18BE7FDF2B5B70B403A60503677"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MarkDong121\/memeNoTextAttributes.git",

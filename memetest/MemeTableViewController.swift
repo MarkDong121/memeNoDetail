@@ -13,11 +13,13 @@ class MemeTableViewController:UITableViewController, UIApplicationDelegate {
     var memeAll: [Meme]!
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tabBarController?.tabBar.isHidden = false
         //to get shared data
          let applicationDelegate = (UIApplication.shared.delegate as! AppDelegate)
         memeAll =  applicationDelegate.memeAll
-        self.tableView.reloadData()
+         self.tableView?.reloadData()
+      //  tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +40,7 @@ class MemeTableViewController:UITableViewController, UIApplicationDelegate {
         let detailController = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
    //     detailController.meme = [self.memeAll[indexPath.row]]
         detailController.meme = self.memeAll[indexPath.row]
+        print(indexPath)
         self.navigationController!.pushViewController(detailController, animated: true)
         
     }
