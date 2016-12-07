@@ -31,15 +31,19 @@ class MemeTableViewController:UITableViewController, UIApplicationDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:"memesCell")!
         let allmeme =  memeAll[(indexPath as NSIndexPath).row]
+   //     cell.textLabel?.text = allmeme.topText
+        
         cell.textLabel?.text = "\(allmeme.topText)"
         cell.imageView?.image = allmeme.memedImage
         return cell
     }
     //for detail view
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let detailController = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
-   //     detailController.meme = [self.memeAll[indexPath.row]]
-        detailController.meme = self.memeAll[indexPath.row]
+        
+        detailController.meme = memeAll[indexPath.row]
         print(indexPath)
         self.navigationController!.pushViewController(detailController, animated: true)
         

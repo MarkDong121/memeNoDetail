@@ -7,14 +7,15 @@
 //
 
 import UIKit
-class MemeDetailViewController: UIViewController {
+class MemeDetailViewController: UIViewController, UIApplicationDelegate {
  //   var meme: [Meme]!
     var meme: Meme!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
-    
+ 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.reloadInputViews()
         self.label.text = "\(self.meme.topText)"
         self.imageView!.image = UIImage(named: "\(meme.memedImage)")
         self.tabBarController?.tabBar.isHidden = true
@@ -24,5 +25,5 @@ class MemeDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
     }
-    
+   
 }

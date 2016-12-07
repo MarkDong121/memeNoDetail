@@ -24,34 +24,31 @@ class MemeCollectionViewController: UICollectionViewController, UIApplicationDel
         //to get shared data
  //       let applicationDelegate = (UIApplication.shared.delegate as! AppDelegate)
  //       memeAll =  applicationDelegate.memeAll
-        self.collectionView?.reloadData()
-   //     collectionView?.reloadData()
+   //     self.collectionView?.reloadData()
+        collectionView?.reloadData()
 
     }
-    override func viewDidAppear(_ animated: Bool) {
-        viewDidAppear(true)
-        }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section:Int) -> Int {
         print(memeAll.count)
         return self.memeAll.count
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath as IndexPath) as! MemeCollectionViewCell
- 
-        let oneMeme = self.memeAll[(indexPath as NSIndexPath).row]
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-   
+    
+   let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath as IndexPath) as! MemeCollectionViewCell
         
-//        cell.nameLabel?.text = "\(oneMeme.topText)"
-        cell.memeImageView?.image = oneMeme.memedImage
+        let oneMeme = self.memeAll[(indexPath as NSIndexPath).item]
+        cell.nameLabel?.text = "\(oneMeme.topText)"
+       cell.memeImageView?.image = oneMeme.memedImage
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
-  
-       //
- //       detailVC.meme = [self.memes[(indexPath).row]]
+        
+    
+   let detailVC = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
+        
         detailVC.meme = self.memeAll[(indexPath).row]
         self.navigationController!.pushViewController(detailVC, animated: true)
     }
